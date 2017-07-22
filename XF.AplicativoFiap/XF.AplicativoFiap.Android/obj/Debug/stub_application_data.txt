@@ -1,0 +1,2 @@
+android.app.Application
+XF.AplicativoFiap.Android

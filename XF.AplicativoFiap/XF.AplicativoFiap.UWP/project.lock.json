@@ -22272,16 +22272,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "c:\\users\\administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\XF.AplicativoFiap.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\XF.AplicativoFiap.UWP.csproj",
       "projectName": "XF.AplicativoFiap.UWP",
-      "projectPath": "c:\\users\\administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\XF.AplicativoFiap.UWP.csproj",
-      "projectJsonPath": "c:\\users\\administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\project.json",
+      "projectPath": "C:\\Users\\Administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\XF.AplicativoFiap.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\Administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "c:\\users\\administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.csproj": {
-              "projectPath": "c:\\users\\administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.csproj"
+            "C:\\Users\\Administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\documents\\visual studio 2017\\Projects\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap\\XF.AplicativoFiap.csproj"
             }
           }
         }

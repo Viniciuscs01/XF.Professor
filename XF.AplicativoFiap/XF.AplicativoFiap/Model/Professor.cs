@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
@@ -17,9 +18,9 @@ namespace XF.AplicativoFiap.Model
 
     public static class ProfessorRepository
     {
-        private static List<Professor> professoresSqlAzure;
+        private static ObservableCollection<Professor> professoresSqlAzure;
 
-        public static async Task<List<Professor>> GetProfessoresSqlAzureAsync()
+        public static async Task<ObservableCollection<Professor>> GetProfessoresSqlAzureAsync()
         {
             if (professoresSqlAzure != null) return professoresSqlAzure;
 
@@ -28,7 +29,7 @@ namespace XF.AplicativoFiap.Model
                 "http://apiaplicativofiap.azurewebsites.net/api/professors");
 
             var professorSerializer = new DataContractJsonSerializer(typeof(List<Professor>));
-            professoresSqlAzure = (List<Professor>)professorSerializer.ReadObject(stream);
+            professoresSqlAzure = (ObservableCollection<Professor>)professorSerializer.ReadObject(stream);
 
             return professoresSqlAzure;
         }

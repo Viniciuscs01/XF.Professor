@@ -43,8 +43,15 @@ namespace XF.AplicativoFiap.ViewModel
         }
 
         private async void Carregar()
-        {            
-            ListProfessores = await ProfessorRepository.GetProfessoresSqlAzureAsync();
+        {
+            //ListProfessores = await ProfessorRepository.GetProfessoresSqlAzureAsync();
+
+
+            await ProfessorRepository.GetProfessoresSqlAzureAsync().ContinueWith(t =>
+            {
+                ListProfessores = t.Result.ToList();
+            });
+
             AplicaFiltro();
         }
 
@@ -53,9 +60,10 @@ namespace XF.AplicativoFiap.ViewModel
             
         }
 
-        private void OnAdicionar(Professor professor)
+        private async void OnAdicionar(Professor professor)
         {
-            
+            if(await ProfessorRepository.PostProfessorSqlAzureAsync(professor))
+                await Application.Current.MainPage.Navigation.PopAsync();
         }
 
         private async void OnNovo()
